@@ -20,6 +20,6 @@ app.get('/', async (req, res) => {
     res.render('home.ejs', { name: users[0][0].name, lastName: users[0][0].lastname })
 })
 
-app.listen(process.env.PORT, function () {
-    console.log('your server is calling on this port http://localhost:' + process.env.PORT);
+app.listen(3001, function () {
+    console.log('your server is calling on this port http://localhost:3001');
 })
